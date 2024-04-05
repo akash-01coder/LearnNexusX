@@ -110,6 +110,7 @@ export default function MyProfile() {
             <div>
               <p className="mb-2 text-base text-richblack-500">Date Of Birth</p>
               <p className="text-sm font-medium text-richblack-25 p-1">
+              <span>{console.debug('test', user?.additionalDetails?.dateOfBirth)}</span>
                 {formattedDate(user?.additionalDetails?.dateOfBirth) ??
                   "Add your Date Of Birth"}
               </p>
